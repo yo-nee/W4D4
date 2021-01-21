@@ -47,4 +47,8 @@ describe "#move" do
         expect(array.move([0,2])).to eq([["d1","d2","d3"],[],["d4"]])
     end
 
+    it "raises an error when pulling from empty array" do
+        expect {array.move([1,2])}.to raise_error("cant move from an empty array")
+    end
 end
+
