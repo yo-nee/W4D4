@@ -42,10 +42,9 @@ end
 # #won?
 
 describe "#move" do
-    it "moves the last disc in an array" do
-        expect(move([0,2])).to eq([[d1,d2,d3][][d4]])
+    subject(:array) {[["d1","d2","d3","d4"],[],[]]}
+    it "moves the last disc in an array to another array" do
+        expect(array.move([0,2])).to eq([["d1","d2","d3"],[],["d4"]])
     end
-
-    it "places the last disc in another array " 
 
 end

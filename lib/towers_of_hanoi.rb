@@ -28,6 +28,17 @@ end
 
 ####tower of hanoi game ####
 
+class Array
+# [ [d1,d2,d3,d4], [], [] ]
+    def move(selects) #[0,2] #move from index 0 in the self to index 2 in the self
+        from = selects[0]
+        to = selects[1]
+        top_disc = self[from].pop
+        self[to].push(top_disc)
+        self
+    end
+end
+
 
 
 
