@@ -19,3 +19,14 @@ class Array
     end
 
 end
+
+def stock_picker(arr)
+    best_days = [] # pair of days 
+    best_days << arr.min
+    best_days << arr.max
+end
+
+
+
+
+
