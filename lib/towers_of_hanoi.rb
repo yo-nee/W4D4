@@ -22,10 +22,11 @@ end
 
 def stock_picker(arr)
     best_days = [] # pair of days 
-    best_days << arr.min
-    best_days << arr.max
+    best_days << arr.index(arr.min)
+    best_days << arr.index(arr.max)
 end
 
+####tower of hanoi game ####
 
 
 

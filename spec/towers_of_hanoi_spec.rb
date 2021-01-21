@@ -30,3 +30,22 @@ describe "#stock_picker" do
     end
 end
 
+####tower of hanoi game ####
+# Keep three arrays, which represents the piles of discs. 
+# [ [d1,d2,d3,d4], [], [] ]
+# Pick a representation of the discs to store in the arrays; maybe just a number representing their size. 
+# Don't worry too much about making the user interface pretty.
+# In a loop, prompt the user (using gets) and ask what pile to select a disc from, and where to put it.
+# After each move, check to see if they have succeeded in moving all the discs, to the final pile. If so, they win!
+# Note: don't worry about testing the UI. Testing console I/O is tricky (don't bother checking gets or puts). Focus on:
+# #move
+# #won?
+
+describe "#move" do
+    it "moves the last disc in an array" do
+        expect(move([0,2])).to eq([[d1,d2,d3][][d4]])
+    end
+
+    it "places the last disc in another array " 
+
+end
